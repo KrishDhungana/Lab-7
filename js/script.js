@@ -1,11 +1,16 @@
 function init(){
-  function al(){
-    var e = document.getElementById('entryinput');
-    var t = document.getElementById('textoutput');
-    t.innerHTML = e.value;
-    alert('Krish Dhungana: ' + e.value);
-  }
-  var b = document.getElementById('entrybutton');
-  b.addEventListener('click', al);
+
+	function albox(){
+    	var enter = document.getElementById('entryinput');
+    
+    	var toutput = document.getElementById('textoutput');
+    	toutput.innerHTML = enter.value;
+    	alert('Krish Dhungana: ' + enter.value);
+    
+}
+  
+  		var button = document.getElementById('entrybutton');
+  		button.addEventListener('click', albox);
+  
 }
 window.addEventListener('load', init);
